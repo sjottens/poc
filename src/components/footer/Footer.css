@@ -1,0 +1,14 @@
+.footer-top {
+    background-color: #f1f7ff;
+    min-height: 120px;
+}
+
+.footer-middle {
+    min-height: 300px;
+}
+
+.footer-bottom {
+    background-color: #111111;
+    min-height: 220px;
+    color: #fff;
+}
