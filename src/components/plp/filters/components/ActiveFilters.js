@@ -1,4 +1,4 @@
-const ProductFilters = () => {
+const ActiveFilters = () => {
 	return (
 		<section className="plp-filters">
             <p>product filters</p>
@@ -6,4 +6,4 @@ const ProductFilters = () => {
 	);
 }
 
-export default ProductFilters; 
+export default ActiveFilters;

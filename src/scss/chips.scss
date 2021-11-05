@@ -1,0 +1,52 @@
+.chip{
+    display: flex;
+    align-items: center;
+    background: #FAFAFA;
+    border-radius: 16px;
+    font-size: 14px;
+    padding: .5rem 1rem;
+    &_closable{
+        @extend .chip;
+    }
+    .chip-icon{
+        filter: brightness(0);
+        &.close{
+            margin-left: .5rem;
+        }
+    }
+    p{
+        padding-left: .5rem;
+        font-size: 14px;
+        white-space: nowrap;
+        color: #626C79;
+    }
+    &:hover{
+        background: #F1F7FF;
+        cursor: pointer;
+        .chip-icon{
+            filter: none;
+        }
+    }
+    &.selected{
+        background: #F1F7FF;
+        .chip-icon{
+            filter: none;
+            &.close{
+                margin-top: 3px;
+            }
+        }
+    }
+    // color variants
+    &.chip_blue{
+        background: #2196F3;
+    }
+    &.chip_red{
+        background: #FF5252;
+    }
+    &.chip_green{
+        background: #4CAF50;
+    }
+    &.chip_orange{
+        background: #FB8C00;
+    }
+}
