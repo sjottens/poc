@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
 import ProductFilters from '../components/plp/filters/Filters'
 import PlpHead from '../components/plp/head/Head';
 import ProductList from '../components/plp/productList/ProductList';
-import '../css/plp.css'
+import '../css/plp.scss'
 
 const ProductListPage = () => {
 	return (
