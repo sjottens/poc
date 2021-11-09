@@ -1,7 +1,7 @@
-import ProductFilters from '../components/plp/filters/Filters'
+import ProductFilters from '../components/plp/filters/ProductFilters'
 import PlpHead from '../components/plp/head/Head';
 import ProductList from '../components/plp/productList/ProductList';
-import '../css/plp.scss'
+import '../scss/plp.scss'
 
 const ProductListPage = () => {
 	return (

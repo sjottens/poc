@@ -7,7 +7,7 @@ const PlpHead = () => {
             <div className="padded-wrapper">
                 <div className="plp-head_left">
                     <Link to="#">Back to Electronics</Link>
-                    <h2>Laptops</h2>
+                    <h1>Laptops</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut molestie massa. Vivamus eget gravida leo. Ut et aliquam orci. Integer dignissim consectetur interdum.</p>
                 </div>
                 <QuickFilter/>

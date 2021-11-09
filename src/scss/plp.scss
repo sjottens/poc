@@ -22,9 +22,6 @@
                 padding-right: .5rem;
             }
         }
-        h2{
-            margin-top: 1rem;
-        }
     }
 
     .quickfilter{
@@ -64,8 +61,28 @@
     display: flex;
 }
 
-.plp-filters{
+.plp-filtercontainer{
+    padding-top: 1rem;
     width: 40%;
+    .plp-filters{
+        margin-bottom: 2em;
+        .plp-filterList{
+            list-style: none;
+            &_activeFilters{
+                @extend .plp-filterList;
+                display: flex;
+            }
+            li.navigationItem{
+                padding: .5rem .7rem;
+                font-size: 16px;
+                border-left: 4px solid rgba(255, 255, 255, 0);
+                &:hover{
+                    background: #F1F7FF;
+                    border-left-color: #0A47ED;
+                }
+            }
+        }
+    }
 }
 
 .plp-productlist{
@@ -86,44 +103,4 @@
     border-radius: 4px;
     padding: .3rem 1rem;
     font-size: 14px;
-}
-
-.chip{
-    display: flex;
-    align-items: center;
-    background: #FAFAFA;
-    border-radius: 16px;
-    font-size: 14px;
-    padding: .5rem 1rem;
-    &_closable{
-        @extend .chip;
-    }
-    .chip-icon{
-        filter: brightness(0);
-        &.close{
-            margin-left: .5rem;
-        }
-    }
-    p{
-        padding-left: .5rem;
-        font-size: 14px;
-        white-space: nowrap;
-        color: #626C79;
-    }
-    &:hover{
-        background: #F1F7FF;
-        cursor: pointer;
-        .chip-icon{
-            filter: none;
-        }
-    }
-    &.selected{
-        background: #F1F7FF;
-        .chip-icon{
-            filter: none;
-            &.close{
-                margin-top: 3px;
-            }
-        }
-    }
 }
