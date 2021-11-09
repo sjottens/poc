@@ -5,17 +5,15 @@
     border-radius: 16px;
     font-size: 14px;
     padding: .5rem 1rem;
+    margin-right: 1rem;
     &_closable{
         @extend .chip;
     }
     .chip-icon{
         filter: brightness(0);
-        &.close{
-            margin-left: .5rem;
-        }
+        margin-right: .5rem;
     }
     p{
-        padding-left: .5rem;
         font-size: 14px;
         white-space: nowrap;
         color: #626C79;
@@ -32,7 +30,8 @@
         .chip-icon{
             filter: none;
             &.close{
-                margin-top: 3px;
+                margin-left: .5rem;
+                margin-right: 0;
             }
         }
     }

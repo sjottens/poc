@@ -65,9 +65,14 @@
     padding-top: 1rem;
     width: 40%;
     .plp-filters{
+        margin-bottom: 2em;
         .plp-filterList{
             list-style: none;
-            li{
+            &_activeFilters{
+                @extend .plp-filterList;
+                display: flex;
+            }
+            li.navigationItem{
                 padding: .5rem .7rem;
                 font-size: 16px;
                 border-left: 4px solid rgba(255, 255, 255, 0);

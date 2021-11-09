@@ -1,8 +1,15 @@
-const ActiveFilters = () => {
+import Chip from "../../../chips/Chip";
+
+const ActiveFilters = (props) => {
 	return (
-		<section className="plp-filters">
-            <p>product filters</p>
-        </section>
+		<div className="plp-filters">
+            <h3>Subcategories</h3>
+            <ul className="plp-filterList_activeFilters">
+                {props.activeFilters.map(activeFilter =>{
+                    return <Chip name={activeFilter.name}/>
+                })}
+            </ul>
+        </div>
 	);
 }
 

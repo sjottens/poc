@@ -4,7 +4,7 @@ const SubCategories = (props) => {
             <h3>Subcategories</h3>
             <ul className="plp-filterList">
                 {props.categories.map(category =>{
-                    return <li>{category}</li>
+                    return <li className="navigationItem">{category}</li>
                 })}
             </ul>
         </div>
