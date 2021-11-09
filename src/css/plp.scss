@@ -1,0 +1,129 @@
+.padded-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;  
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.plp-head{
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom: 1px solid #DBDDE0;
+
+    .plp-head_left{
+        width: 40%;
+        a{
+            color: #0A47ED;
+            text-decoration: none;
+            &::before{
+                content: "<";
+                padding-right: .5rem;
+            }
+        }
+        h2{
+            margin-top: 1rem;
+        }
+    }
+
+    .quickfilter{
+        padding-left: 4rem;
+        width: 60%;
+        .quickfilter-heading{
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 2rem;
+            h3{
+                margin: 0;
+                font-size: 14px;
+            }
+            a{
+                margin-left: 1rem;
+                font-size: 14px;
+                text-decoration: none;
+                color: #0A47ED;
+                font-weight: 500;
+                line-height: 1;
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 2rem;
+            li{
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.plp-container{
+    width: 100%;
+    display: flex;
+}
+
+.plp-filters{
+    width: 40%;
+}
+
+.plp-productlist{
+    width: 60%;
+}
+
+
+
+
+
+
+
+// global styles
+
+.label{
+    background: #fff;
+    border: 1px solid #0A47ED;
+    border-radius: 4px;
+    padding: .3rem 1rem;
+    font-size: 14px;
+}
+
+.chip{
+    display: flex;
+    align-items: center;
+    background: #FAFAFA;
+    border-radius: 16px;
+    font-size: 14px;
+    padding: .5rem 1rem;
+    &_closable{
+        @extend .chip;
+    }
+    .chip-icon{
+        filter: brightness(0);
+        &.close{
+            margin-left: .5rem;
+        }
+    }
+    p{
+        padding-left: .5rem;
+        font-size: 14px;
+        white-space: nowrap;
+        color: #626C79;
+    }
+    &:hover{
+        background: #F1F7FF;
+        cursor: pointer;
+        .chip-icon{
+            filter: none;
+        }
+    }
+    &.selected{
+        background: #F1F7FF;
+        .chip-icon{
+            filter: none;
+            &.close{
+                margin-top: 3px;
+            }
+        }
+    }
+}

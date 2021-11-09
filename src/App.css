@@ -1,3 +1,7 @@
+/* font-family: 'Noto Serif', serif;
+font-family: 'Roboto', sans-serif; */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +34,11 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   line-height: 1.4;
 }
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Noto Serif', serif;
+}
+
 h1 {
   font-size: 3em;
   line-height: 1;
@@ -58,6 +67,10 @@ h6 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1.5em;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn-primary {
