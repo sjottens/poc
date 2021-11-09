@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.svg';
+import wundertech from '../images/wundertech.svg';
 import { FaAlignRight } from "react-icons/fa";
 import {Link} from 'react-router-dom';
 
@@ -17,11 +17,14 @@ export default class Navbar extends Component {
 	render() {
 		return (
 			<nav className="navbar">
+				<div className="nav-logo">
+					<Link to="/">
+						<img src={wundertech} alt="Beach resort"/>
+					</Link>
+				</div>
 				<div className="nav-center">
 					<div className="nav-header">
-						<Link to="/">
-							<img src={logo} alt="Beach resort" />
-						</Link>
+						
 						<button 
 							type="button" 
 							className="nav-btn" 
