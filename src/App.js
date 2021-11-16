@@ -36,9 +36,9 @@ class App extends React.Component {
 				<Route exact path="/products" component={ProductListPage}/>
 				<Route component={Error}/>
 			</Switch>
-			<div className="wrapper">
+			{/* <div className="wrapper">
 				{this.state.products && <Products products={this.state.products} />}
-			</div>
+			</div> */}
 			<Footer/>
 			</>
 		);

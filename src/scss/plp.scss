@@ -67,6 +67,8 @@
     .plp-filters{
         margin-bottom: 2em;
         .plp-filterList{
+            display: flex;
+            flex-direction: column;
             list-style: none;
             &_activeFilters{
                 @extend .plp-filterList;
@@ -96,6 +98,44 @@
                     .icon-close{
                         display: inline;
                     }
+                }
+            }
+            label{
+                padding: .5rem .7rem;
+                font-size: 16px;
+                border-left: 4px solid rgba(255, 255, 255, 0);
+                input{
+                    position: relative;
+                    appearance: none;
+                    background-color: #fff;
+                    margin: 0;
+                    margin-right: 1em;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        height: 1.5em;
+                        top: -1em;
+                        left: -1em;
+                        width: 1.5em;
+                        background-size: cover;
+                        background-image: url("data:image/svg+xml,%3Csvg stroke='currentColor' fill='currentColor' stroke-width='0' version='1.1' viewBox='0 0 16 16' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0h-12c-1.1 0-2 0.9-2 2v12c0 1.1 0.9 2 2 2h12c1.1 0 2-0.9 2-2v-12c0-1.1-0.9-2-2-2zM14 14h-12v-12h12v12z'%3E%3C/path%3E%3C/svg%3E");
+                        background-repeat: no-repeat;
+                    }
+                    &:checked::before{
+                        content: "";
+                        position: absolute;
+                        height: 1.5em;
+                        top: -1em;
+                        left: -1em;
+                        width: 1.5em;
+                        background-size: cover;
+                        background-image: url("data:image/svg+xml,%3Csvg stroke='currentColor' fill='currentColor' stroke-width='0' version='1.1' viewBox='0 0 16 16' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0h-12c-1.1 0-2 0.9-2 2v12c0 1.1 0.9 2 2 2h12c1.1 0 2-0.9 2-2v-12c0-1.1-0.9-2-2-2zM7 12.414l-3.707-3.707 1.414-1.414 2.293 2.293 4.793-4.793 1.414 1.414-6.207 6.207z'%3E%3C/path%3E%3C/svg%3E");
+                        background-repeat: no-repeat;
+                    }
+                }
+                &:hover{
+                    background: #F1F7FF;
+                    cursor: pointer;
                 }
             }
         }

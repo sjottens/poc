@@ -4,13 +4,18 @@ import Filter from "./components/Filter";
 import SubCategories from "./components/SubCategories";
 
 const ProductFilters = () => {
-	const [activeFilters, setactiveFilters] = useState([{filterName:"condition", value:"used"},{filterName:"check", value:"1212"}])
+	const [activeFilters, setactiveFilters] = useState([{filterName:"condition", value:"used"}])
 	const [subCategories, setsubCategories] = useState(["Chromebooks", "Ultrabooks", "Apple Macbooks", "Accessoires"])
 	let filters = [
 		{
 			filterName:"condition",
 			values:["New", "used", "Renewed", "Refurbished", "Showroom sample"],
 			type:"radio"
+		},
+		{
+			filterName:"Memory",
+			values:["4 GB", "6 GB", "8 GB", "16 GB & more"],
+			type:"checkbox"
 		}
 	]
 
