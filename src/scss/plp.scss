@@ -76,9 +76,26 @@
                 padding: .5rem .7rem;
                 font-size: 16px;
                 border-left: 4px solid rgba(255, 255, 255, 0);
-                &:hover{
+                display: flex;
+                justify-content: space-between;
+                .icon-close{
+                    display: none;
+                    filter: brightness(0);
+                }
+                &:hover, &.active{
                     background: #F1F7FF;
                     border-left-color: #0A47ED;
+                    cursor: pointer;
+                }
+                &:hover{
+                    .icon-close{
+                        filter: none;
+                    }
+                }
+                &.active{
+                    .icon-close{
+                        display: inline;
+                    }
                 }
             }
         }
