@@ -1,16 +1,17 @@
 import React from 'react'
 import Product from './Product'
 
-const products = ({ product }) => {
+const products = ( props ) => {
+	console.log(props)
 	return (
 		<div>
-			{product.map((product, index) => <Product product={product} key={index} />)}
+			{props.products && props.products.map(
+				(product, index) =>{
+					return <Product product={product} key={index} />
+				}
+			)}
 		</div>
 	)
-}
-
-products.propTypes = {
-
 }
 
 export default products
