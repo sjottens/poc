@@ -1,11 +1,19 @@
 import React from 'react'
 import Product from './Product'
 
-const products = ({ product }) => {
-	console.log(product)
+const products = ( props ) => {
+	console.log('product= ' + props)
 	return (
 		<div>
-			{product && <h2>harry</h2>}
+			{props.products && props.products.map(
+				(product, index) =>{
+					console.log(product);
+					return <Product product={product} key={index} />
+				}
+			)}
+
+
+			
 		</div>
 	)
 }

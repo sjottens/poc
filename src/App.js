@@ -37,7 +37,7 @@ class App extends React.Component {
 				<Route component={Error}/>
 			</Switch>
 			<div className="wrapper">
-				{this.state.products && <Products props={this.state.products} />}
+				{this.state.products && <Products products={this.state.products} />}
 			</div>
 			<Footer/>
 			</>
