@@ -27,7 +27,7 @@ class App extends React.Component {
 	}
 
 	render() {
-		console.log('stat= ' + this.state.products)
+		console.log(this.state.products)
 		return (
 			<>
 			<Navbar />
