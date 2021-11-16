@@ -1,6 +1,9 @@
 .footer-top {
     background-color: #f1f7ff;
     min-height: 120px;
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
 }
 
 .footer-middle {
@@ -11,4 +14,36 @@
     background-color: #111111;
     min-height: 220px;
     color: #fff;
+}
+
+.footer-bottom .logo {
+
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-bottom .links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer-bottom .links a:hover {
+    background-color: #fafafa;
+    border-radius: 28px;
+}
+
+.footer-bottom .copywrite {
+    color: #626C79;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }

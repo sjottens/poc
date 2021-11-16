@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom';
 
 
 export default class Navbar extends Component {
+	
 	state={
 		isOpen:false
 	}
@@ -15,6 +16,7 @@ export default class Navbar extends Component {
 		this.setState({isOpen:!this.state.isOpen})
 	}
 	render() {
+		console.log('123');
 		return (
 			<nav className="navbar">
 				<div className="nav-center">
