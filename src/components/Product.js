@@ -3,6 +3,7 @@ import React from 'react'
 const Product = ( props ) => {
 	console.log(props)
 	const {name, description, images, featureImages, policy, price, usp} = props.product.fields
+
 	return (
 		<div className="productTile">
 			<h2 className="title">{name}</h2>
