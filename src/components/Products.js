@@ -2,9 +2,10 @@ import React from 'react'
 import Product from './Product'
 
 const products = ({ product }) => {
+	console.log(product)
 	return (
 		<div>
-			{product.map((product, index) => <Product product={product} key={index} />)}
+			{product && <h2>harry</h2>}
 		</div>
 	)
 }
