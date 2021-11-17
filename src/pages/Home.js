@@ -8,7 +8,7 @@ const Home = () => {
 		<>
 			<Hero>
 				<Banner title="POC Products" subtitle="POC products starting at $299">
-					<Link to='/rooms' className="btn-primary">
+					<Link to='/productdetail' className="btn-primary">
 						our products
 					</Link>
 				</Banner>
