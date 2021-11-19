@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.scss';
-import { client } from './client';
-import Products from './components/Products'
+//import { client } from './client';
+//import Products from './components/Products'
 
 import Home from "./pages/Home";
 import ProductListPage from './pages/ProductListPage';
+import ProductDetailPage from './pages/ProductDetailPage';
 import Error from "./pages/Error";
 
 import {Route, Switch} from 'react-router-dom';
@@ -12,28 +13,29 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer/Footer";
 
 class App extends React.Component {
-	state = {
-		products: []
-	}
-	componentDidMount() {
-		client.getEntries()
-		.then((response) => {
-			console.log(response)
-			this.setState({
-				products: response.items
-			})
-		})
-		.catch(console.error)
-	}
+	// state = {
+	// 	products: []
+	// }
+	// componentDidMount() {
+	// 	client.getEntries()
+	// 	.then((response) => {
+	// 		console.log(response)
+	// 		this.setState({
+	// 			products: response.items
+	// 		})
+	// 	})
+	// 	.catch(console.error)
+	// }
 
 	render() {
-		console.log(this.state.products)
+		// console.log(this.state.products)
 		return (
 			<>
 			<Navbar />
 			<Switch>
 				<Route exact path="/" component={Home}/>
 				<Route exact path="/products" component={ProductListPage}/>
+				<Route exact path="/productdetail" component={ProductDetailPage}/>
 				<Route component={Error}/>
 			</Switch>
 			{/* <div className="wrapper">
