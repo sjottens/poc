@@ -4,7 +4,7 @@ import Filter from "./components/Filter";
 import SubCategories from "./components/SubCategories";
 
 const ProductFilters = () => {
-	const [activeFilters, setactiveFilters] = useState([{filterName:"condition", value:"used"}])
+	const [activeFilters, setactiveFilters] = useState([{filterName:"condition", value:"used"},{filterName:"name", value:"value"}])
 	const [subCategories, setsubCategories] = useState(["Chromebooks", "Ultrabooks", "Apple Macbooks", "Accessoires"])
 	let filters = [
 		{

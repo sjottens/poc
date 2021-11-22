@@ -73,6 +73,7 @@
             &_activeFilters{
                 @extend .plp-filterList;
                 display: flex;
+                flex-direction: unset;
             }
             li.navigationItem{
                 padding: .5rem .7rem;
