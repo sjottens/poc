@@ -3,8 +3,8 @@ const SubCategories = (props) => {
 		<div className="plp-filters">
             <h3>Subcategories</h3>
             <ul className="plp-filterList">
-                {props.categories.map(category =>{
-                    return <li className="navigationItem">{category}</li>
+                {props.categories.map((category, key) =>{
+                    return <li key={key} className="navigationItem">{category}</li>
                 })}
             </ul>
         </div>
