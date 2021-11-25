@@ -2,9 +2,6 @@ import React from 'react'
 import { client } from '../client';
 import Products from '../components/Products'
 
-
-
-
 class ProductDetailPage extends React.Component {
 	state = {
 		products: []
