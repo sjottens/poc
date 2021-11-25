@@ -23,7 +23,7 @@ class ProductDetailPage extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>Product detail page</h1>
+				<h1>Product detail page harrie</h1>
 				<div className="wrapper">
 					{this.state.products && <Products products={this.state.products} />}
 				</div>
