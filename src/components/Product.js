@@ -4,18 +4,16 @@ import PropTypes from 'prop-types';
 
 
 const Product = ( props ) => {
-	console.log(props)
+	// console.log(props)
 	const {name, description, images, policy, price, usp} = props.product.fields
 
 	return (
 		<div className="productTile">
-			<Link to={`/productdetail/${name}`}>
-				{name && <h2 className="title">{name}</h2>}
+			<Link to={`/productdetail/${name.replaceAll(/\s/g,'')}`}>
 				{images && <img className='productImage' src={images[0].fields.file.url} alt={name} title={name} />}
+				{name && <h2 className="title">{name}</h2>}
 				{description && <div>{description}<br /><br /></div>}
-				{policy && <div>{policy}<br /><br /></div>}
 				{price && <div>{price}<br /><br /></div>}
-				{usp && <div>{usp}<br /><br /></div>}
 			</Link>
 		</div>
 	)
