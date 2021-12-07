@@ -7,6 +7,10 @@
     font-size: 14px;
 }
 
+.wrapper {
+    margin-left: 90px;
+}
+
 .plp-head{
     width: 100%;
     padding: 2rem 0;
@@ -63,7 +67,8 @@
 
 .plp-filtercontainer{
     padding-top: 1rem;
-    width: 40%;
+    min-width: 20%;
+    max-width: 20%;
     .plp-filters{
         margin-bottom: 2em;
         .plp-filterList{
@@ -147,6 +152,92 @@
     width: 60%;
 }
 
+.product-count {
+    font-size: 16px;
+    padding: 16px 0;
+    span {
+        color: var(--primaryColor);
+    }
+}
+
+.product-list-header {
+    > div {
+        display: inline-block;
+        width: 50%;
+        &:last-child {
+            text-align: right;
+        }
+    }
+    .icon-list, .icon-grid {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin-right: 16px;
+    }
+}
+
+.productTile {
+    margin-bottom: 32px;
+    a {
+        display: block;
+        > div {
+            display: inline-block;
+        }
+    }
+
+    .product-image {
+        max-width: 30%;
+        min-width: 30%;
+        img {
+            padding: 16px;
+            width: 100%;
+            height: 180px;
+        }
+    }
+    .product-content {
+        vertical-align: top;
+        padding-right: 16px;
+        max-width: 60%;
+        min-width: 60%;
+        height: 100%;
+        .title {
+            color: var(--mainBlack);
+            font-size: 16px;
+            font-family: "Roboto", Arial, sans-serif;
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+
+        .description {
+            color: var(--mainBlack);
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical; 
+            overflow: hidden;
+        }
+        .tags {
+            .pr-2 {
+                padding-right: 8px;
+            }
+            font-family: "Roboto", Arial, sans-serif;
+            color: var(--darkGrey);
+            padding-bottom: 8px;
+            font-size: 16px;
+        }
+    }
+    .product-price {
+        vertical-align: top;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        max-width: 10%;
+        min-width: 10%;
+        .price {
+            color: var(--primaryColor);
+        }
+    }
+}
 
 
 

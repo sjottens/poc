@@ -10,10 +10,24 @@ const Product = ( props ) => {
 	return (
 		<div className="productTile">
 			<Link to={`/productdetail/${name.replaceAll(/\s/g,'')}`}>
-				{images && <img className='productImage' src={images[0].fields.file.url} alt={name} title={name} />}
+			<div className="product-image">
+				{images && <img src={images[0].fields.file.url} alt={name} title={name} />}
+			</div>
+			<div className="product-content">
 				{name && <h2 className="title">{name}</h2>}
-				{description && <div>{description}<br /><br /></div>}
-				{price && <div>{price}<br /><br /></div>}
+				<div class="tags">
+					<span class="background-dark--text pr-2">
+						•&nbsp;Acer
+					</span>
+					<span class="background-dark--text pr-2">
+						•&nbsp;15 inch
+					</span>
+				</div>
+				{description && <p className="description">{description}</p>}
+			</div>
+			<div className="product-price">
+				{price && <p className="price">€ {price}</p>}
+			</div>
 			</Link>
 		</div>
 	)
